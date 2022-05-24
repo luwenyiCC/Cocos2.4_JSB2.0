@@ -51,9 +51,31 @@ test/ABCJSBBridge.cpp \
 test/ABCJSBBridge-android.cpp \
 scripting/js-bindings/auto/jsb_cocos2dx_test_auto.cpp \
 ```
+## 6 修改完 Android.mk文件后，需要干什么？
+需要修改 jsb_module_register.cpp 文件 注册 jsb module
 
-## 6. cpp文件里面写了啥？
-自己看文档
+文件路径：
+> build-templates\jsb-default\frameworks\runtime-src\Classes\jsb_module_register.cpp
+
+在 100 行左右添加了：
+```
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+
+
+#include "cocos/scripting/js-bindings/auto/jsb_cocos2dx_test_auto.hpp"
+
+
+#endif
+```
+在 130 行左右添加了：
+```
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+    se->addRegisterCallback(register_all_cocos2dx_test);
+#endif
+```
+
+## 7. cpp文件里面写了啥？
+参考官方文档
 
 ---
 # Over
