@@ -103,7 +103,6 @@
 
 
 #include "cocos/scripting/js-bindings/auto/jsb_cocos2dx_test_auto.hpp"
-#include "cocos/scripting/js-bindings/auto/jsb_cocos2dx_net_auto.hpp"
 
 
 #endif // (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
