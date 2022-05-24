@@ -1,7 +1,7 @@
 # Cocos2.4_JSB2.0
 Cocos Create2.4.3 call c++ use JSB2.0 Building
 
-# Cocos Create 2.4.3 JSB绑定2.0 例子
+# Cocos Create 2.4.3 JSB2.0 自动绑定 例子
 
 ## 一、安装Pyhton
 我用的是Pyhton 2.7.16 [下载地址](https://www.python.org/downloads/release/python-2716/) 安装到 C:\Python27
