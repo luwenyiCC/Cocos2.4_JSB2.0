@@ -49,7 +49,7 @@ window 下载地址：LLVM-5.0.0-win64
 
 ## 七、运行自动绑定
 目录：
-> build-templates\jsb-default\frameworks\cocos2d-x\tools\tojs\run_genbindings_test.bat
+> build-templates\jsb-default\frameworks\cocos2d-x\tools\tojs\run_genbindings_custom.bat
 
 最后输出这个就代表自动绑定大功告成了
 ```
@@ -96,3 +96,9 @@ Android SDK 路径：
 devtools://devtools/bundled/js_app.html?v8only=true&ws=(你的手机内网ip地址，例：192.168.1.10):6086/00010002-0003-4004-8005-000600070008
 ```
 ### 在Chrome devtools 中无法查看 Android 的日志输出，如果要看 Android 原生的日志输出，需要打开 Android Studio > Logcat 查看日志
+
+---
+## 到这里，第一步就大功告成了
+接下来，我们来看如何配置绑定：
+
+[JSB2.0自动绑定配置说明](doc/ConfigJSB2.0.md)
